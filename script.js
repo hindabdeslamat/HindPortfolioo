@@ -12,6 +12,7 @@ setTimeout(() => {
 }, 3000);
 
 // Wait until the DOM is fully loaded
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.querySelector("#menu-icon");
   const navbar = document.querySelector(".navbar");
@@ -87,6 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollReveal().reveal('.contact form', { origin: 'top' });
   }
 });
+
+// Mobile menu toggle functionality
 
 
 

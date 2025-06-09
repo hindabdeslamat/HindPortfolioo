@@ -930,4 +930,12 @@ section {
     font-size: 2rem;
   }
 }
-
+#google_translate_element {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
