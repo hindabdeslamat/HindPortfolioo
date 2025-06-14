@@ -859,17 +859,19 @@ section {
     display: block;
   }
 
-  .navbar {
-    position: absolute;
-    top: 100%;
-    right: 50%;
-    padding: 1rem 3rem;
-    background: rgba(0, 0, 0, 0.8);
-    border-bottom-left-radius: 2rem;
-    display: none;
-    border-left:2px solid var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-  }
+.navbar {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 2rem;
+  border-left: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  display: none;
+  z-index: 100;
+}
 
   .navbar a {
     margin: 3rem 0;
