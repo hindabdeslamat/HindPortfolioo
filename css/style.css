@@ -897,9 +897,11 @@ section {
     align-items: center;
     text-align: center;
   }
-  .home-img img{
-    width:56vw ;
-  }
+  .home-img img,
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
 
   .about {
     flex-direction: column-reverse;
@@ -913,9 +915,7 @@ section {
     margin: 2rem 0;
   }
 
-  .about-img img {
-    width:52vw;
-  }
+  
 
   .skills-container,
   .projects-box {
