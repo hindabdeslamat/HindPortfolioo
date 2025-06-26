@@ -27,7 +27,7 @@
   align-items: center;
   flex-direction: column;
   z-index: 9999;
-  animation: fadeOut 1s ease-in-out 1s forwards;
+animation: fadeOut 1s ease-in-out 1s forwards;
   pointer-events: none; 
 }
 
@@ -854,7 +854,7 @@ section {
 }
 .footer ul li a {
   color: white;
-  border-botton:3px solid transparent;
+  border-bottom:3px solid transparent;
   transition: 0.3s ease-in-out;
 }
 .footer ul li a:hover {
