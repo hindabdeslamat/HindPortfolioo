@@ -4,61 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Website</title>
+   <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
-
-  <!-- Scroll Reveal Library -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <!-- Google Translate (Load once only)
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,fr,de,es,ar',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-  </script> -->
-
-  <!-- Optional Animation Player -->
-  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-</head>
-  <body>
-    
-  <!-- Google Translate widget (hidden initially) -->
   
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
-     <div id="welcomeScreen">
-      <dotlottie-player src="https://lottie.host/0d8d108c-aa60-4b22-ba3a-5d4fde1a686d/EZKHgPqVAj.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
 
-   </dotlottie-player>
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcomeScreen">
+    <dotlottie-player src="https://lottie.host/0d8d108c-aa60-4b22-ba3a-5d4fde1a686d/EZKHgPqVAj.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
     <div id="welcomeTextContainer">
-      <div id="welcomeText"> Welcome to my Portfolio 🚀</div>
-    
+      <div id="welcomeText">Welcome to my Portfolio 🚀</div>
     </div>
   </div>
-    <header class="header">
-      <a href="#home" class="logo">Hind <span>ABDESLAMAT</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-</header>
-<!--
-      <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 9999;"></div>-->
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo">Hind <span>ABDESLAMAT</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
           <section class="home" id="home">
             <div class="home-content">
@@ -108,7 +87,8 @@
             <a href="#" class="btn">Read More</a>
           </div>
         </section>
-        <!-- Education --><section class="education" id="education">
+        <!-- Education -->
+         <section class="education" id="education">
   <h2 class="heading">Education</h2>
   <div class="timeline-items">
 
@@ -373,7 +353,7 @@
 
         <!--Contact-->
         <section class="contact" id="contact">
-          <h2 class="heading" data-en="Contact Me" data-de="Kontaktiere mich">Contact <span>Me</span></h2>
+          <h2 class="heading" data-en="Contact Me" >Contact <span>Me</span></h2>
           <div class="form-container animate__animated animate__fadeInDown">
       <form action="https://formspree.io/f/xkgbwpyd" method="POST" class="contactForm">
             <div class="input-group">
@@ -420,6 +400,7 @@
     by Hind Abdeslamat | All Rights Reserved © 2025
   </p>
 </footer>
-    
+    <script src="script.js"></script>
+
   </body>
 </html>

@@ -1,35 +1,12 @@
-// ✅ Load Google Translate widget
- /*
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: 'en' },
-    'google_translate_element'
-  );
-}
-
-// ✅ Hide the translation widget after a language is selected
-function hideTranslateAfterSelection() {
-  const translateElement = document.getElementById('google_translate_element');
-  const select = translateElement.querySelector('select.goog-te-combo');
-  if (!select) return;
-
-  select.addEventListener('change', () => {
+ window.addEventListener("load", () => {
     setTimeout(() => {
-      translateElement.style.display = 'none';
-    }, 1000);
-  });
-}
+      const welcomeScreen = document.getElementById("welcomeScreen");
+      if (welcomeScreen) {
+        welcomeScreen.style.display = "none";
+      }
+    }, 2000);
 
-// ✅ Wait for the widget to load before applying the hide logic
-window.addEventListener('load', () => {
-  const interval = setInterval(() => {
-    const translateElement = document.getElementById('google_translate_element');
-    if (translateElement && translateElement.querySelector('select.goog-te-combo')) {
-      clearInterval(interval);
-      hideTranslateAfterSelection();
-    }
-  }, 500);
-});*/
+  });
 
 // ✅ Run when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
