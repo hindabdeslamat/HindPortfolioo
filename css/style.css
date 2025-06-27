@@ -829,6 +829,20 @@ section {
 /* Google Translate Element */
 #google_translate_element {
   position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  box-shadow: 0 0 10px rgba(184, 135, 132, 0.7);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+/*
+#google_translate_element {
+  position: fixed;
   top: 80px;       
   right: 20px;
   z-index: 1500;
@@ -853,7 +867,7 @@ section {
 #google_translate_element .goog-te-gadget-icon {
   width: 16px !important;
   height: 16px !important;
-}
+}*/
 
 
 @media (max-width: 1285px) {
@@ -998,15 +1012,9 @@ section {
     font-size: 2rem;
   }
   #google_translate_element {
-    top: 60px;
-    right: 10px;
-    width: 120px;
-    font-size: 11px;
-    padding: 4px 6px;
-  }
-
-  #google_translate_element .goog-te-gadget-icon {
-    width: 14px !important;
-    height: 14px !important;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+    padding: 4px 8px;
   }
 }
