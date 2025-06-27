@@ -1,4 +1,5 @@
 // ✅ Load Google Translate widget
+ /*
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     { pageLanguage: 'en' },
@@ -28,7 +29,7 @@ window.addEventListener('load', () => {
       hideTranslateAfterSelection();
     }
   }, 500);
-});
+});*/
 
 // ✅ Run when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
