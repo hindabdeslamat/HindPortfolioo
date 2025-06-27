@@ -90,3 +90,26 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollReveal().reveal('.contact form', { origin: 'top' });
   }
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  const translateDiv = document.createElement("div");
+  translateDiv.id = "translate_button";
+  translateDiv.style.position = "fixed";
+  translateDiv.style.top = "10px";
+  translateDiv.style.left = "10px";
+  translateDiv.style.zIndex = "1000";
+  document.body.appendChild(translateDiv);
+
+  window.googleTranslateElementInit = function () {
+    new google.translate.TranslateElement({
+      pageLanguage: "en",
+      includedLanguages: "en,fr,de,es,ar",
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false,
+    }, "translate_button");
+  };
+
+  const gScript = document.createElement("script");
+  gScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  document.head.appendChild(gScript);
+})
