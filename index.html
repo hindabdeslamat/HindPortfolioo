@@ -38,17 +38,6 @@
           <a href="#contact">Contact</a>
         </nav>
 </header>
-
-
-      <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement(
-            {pageLanguage: 'en'}, 
-            'google_translate_element'
-          );
-        }
-      </script>
-
       <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
           <section class="home" id="home">
@@ -417,6 +406,24 @@
 
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.querySelector(".navbar");
+
+    if (menuIcon && navbar) {
+      menuIcon.setAttribute("aria-expanded", "false");
+
+      menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("bx-x");
+        navbar.classList.toggle("active");
+
+        const expanded = menuIcon.getAttribute("aria-expanded") === "true";
+        menuIcon.setAttribute("aria-expanded", String(!expanded));
+      });
+    }
+  });
+</script>
 
 
     <script src="script.js"></script>
