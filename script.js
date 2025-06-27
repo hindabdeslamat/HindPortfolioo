@@ -93,10 +93,3 @@
     }
 
   });
-
-mainContent.style.opacity = '0';
-mainContent.style.transition = 'opacity 0.5s ease';
-mainContent.style.display = 'block';
-setTimeout(() => {
-  mainContent.style.opacity = '1';
-}, 50);
