@@ -797,11 +797,7 @@ section {
 
   #menu-icon {
     display: block;
-    font-size: 3.6rem;
-    cursor: pointer;
-    color: var(--text-color);
-    position: relative;
-    z-index: 9999; 
+    
   }
 
   .navbar {
