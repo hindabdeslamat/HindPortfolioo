@@ -854,11 +854,7 @@ section {
   z-index: 10;
   position: relative;
 }
-
-#menu-icon {
-  z-index: 9999 !important;
-  position: relative;
-}
+/* Responsive Design */
 
 
 @media (max-width: 1285px) {
@@ -872,18 +868,13 @@ section {
     z-index: 10;
   }
 
- 
-  #menu-icon {
-    z-index: 9999;
-    position: relative;
-  }
     
   .header {
     padding: 2rem 5%;
-  }/*
+  }
   #menu-icon {
       display: block;
-    }*/
+    }
     .navbar {
       display: none;
       flex-direction: column;
