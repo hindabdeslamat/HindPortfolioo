@@ -762,6 +762,7 @@ section {
 .home-content h1, .home-content h3 {
   animation: fadeInUp 1s ease forwards;
 }
+
 .footer ul li a {
   color: white;
   border-bottom:3px solid transparent;
@@ -776,49 +777,52 @@ section {
   font-size: 1.6rem;
   
 }
+/* Google Translate Element */
 #google_translate_element {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   z-index: 10;
-  position: relative;
 }
+
 /* Responsive Design */
-
-
 @media (max-width: 1285px) {
   html {
     font-size: 55%;
   }
-  #google_translate_element {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-  }
 
-    
   .header {
     padding: 2rem 5%;
   }
-  #menu-icon {
-      display: block;
-    }
-    .navbar {
-      display: none;
-      flex-direction: column;
-      background: rgba(0, 0, 0, 0.9);
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-    }
-    .navbar.active {
-      display: flex;
-    }
-    .navbar a {
-      margin: 1rem;
-      text-align: center;
-    }
 
-  
+  #menu-icon {
+    display: block;
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: var(--text-color);
+    position: relative;
+    z-index: 9999; 
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9998; 
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 1rem;
+    text-align: center;
+  }
 
   .home {
     flex-direction: column-reverse;
@@ -828,24 +832,21 @@ section {
   }
 
   .home-img img,
-.about-img img {
-  max-width: 100%;
-  height: auto;
-}
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+  }
 
   .about {
     flex-direction: column-reverse;
     text-align: center;
-    /*
-    padding: 4rem 5%;
-    gap: 3rem;*/
+    gap: 3rem;
   }
-  .about h2{
+
+  .about h2 {
     text-align: center;
     margin: 2rem 0;
   }
-
-  
 
   .home-img,
   .about-img {
@@ -868,10 +869,6 @@ section {
     text-align: center;
   }
 
-  .about {
-    flex-direction: column-reverse;
-    gap: 3rem;
-  }
   .skills-container,
   .projects-box {
     grid-template-columns: 1fr;
