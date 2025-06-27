@@ -895,48 +895,68 @@ section {
 }
 
 
-/* Google Translate Element */
 #google_translate_element {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 12px;
+  right: 12px;
   z-index: 1000;
-  background-color: rgba(219, 216, 216, 0.8);
-  border-radius: 5px;
-  padding: 6px 10px;
-  font-size: 12px;
-  box-shadow: 0 0 10px rgba(184, 135, 132, 0.7);
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-/*
-#google_translate_element {
-  position: fixed;
-  top: 80px;       
-  right: 20px;
-  z-index: 1500;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  padding: 5px 8px;         
-  font-size: 12px;          
-  width: 150px;             
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  pointer-events: auto;
-  user-select: none;
-  transition: opacity 0.3s ease;
-}
-
-#google_translate_element .goog-te-gadget-simple {
-  font-size: 12px !important;
-  padding: 2px !important;
-  width: 100% !important;
+  border-radius: 40px;
+  padding: 3px 6px;
+  font-size: 11px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  max-width: 110px;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-#google_translate_element .goog-te-gadget-icon {
-  width: 16px !important;
-  height: 16px !important;
-}*/
+/* Make the language dropdown smaller */
+#google_translate_element select {
+  padding: 2px 6px;
+  font-size: 11px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Hover effect for desktop */
+#google_translate_element:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #google_translate_element {
+    bottom: 8px;
+    right: 8px;
+    padding: 2px 4px;
+    font-size: 10px;
+    max-width: 90px;
+  }
+
+  #google_translate_element select {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  #google_translate_element {
+    bottom: 6px;
+    right: 6px;
+    padding: 1px 3px;
+    font-size: 9px;
+    max-width: 80px;
+  }
+
+  #google_translate_element select {
+    font-size: 9px;
+    padding: 1px 3px;
+  }
+}
+
 
 
 @media (max-width: 1285px) {
@@ -1080,10 +1100,5 @@ section {
   .home-content h3 {
     font-size: 2rem;
   }
-  #google_translate_element {
-    bottom: 5px;
-    right: 5px;
-    font-size: 10px;
-    padding: 4px 8px;
-  }
+  
 }
