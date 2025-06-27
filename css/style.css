@@ -825,6 +825,7 @@ section {
   font-size: 1.6rem;
   
 }
+
 /* Google Translate Element */
 #google_translate_element {
   position: fixed;
@@ -995,5 +996,17 @@ section {
 
   .home-content h3 {
     font-size: 2rem;
+  }
+  #google_translate_element {
+    top: 60px;
+    right: 10px;
+    width: 120px;
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  #google_translate_element .goog-te-gadget-icon {
+    width: 14px !important;
+    height: 14px !important;
   }
 }

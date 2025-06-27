@@ -6,6 +6,28 @@
       'google_translate_element'
     );
   }
+  function hideTranslateAfterSelection() {
+  const translateElement = document.getElementById('google_translate_element');
+  
+  const select = translateElement.querySelector('select.goog-te-combo');
+  if (!select) return;
+
+  select.addEventListener('change', () => {
+    setTimeout(() => {
+      translateElement.style.display = 'none';
+    }, 1000);
+  });
+}
+
+window.addEventListener('load', () => {
+  const interval = setInterval(() => {
+    const translateElement = document.getElementById('google_translate_element');
+    if (translateElement && translateElement.querySelector('select.goog-te-combo')) {
+      clearInterval(interval);
+      hideTranslateAfterSelection();
+    }
+  }, 500);
+});
 
   // Run once the DOM is fully loaded
   document.addEventListener("DOMContentLoaded", () => {
