@@ -828,18 +828,32 @@ section {
 /* Google Translate Element */
 #google_translate_element {
   position: fixed;
-  top: 80px;        
-  right: 20px;      
-  z-index: 1500;    
+  top: 80px;       
+  right: 20px;
+  z-index: 1500;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
-  padding: 8px 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-size: 14px;
-  user-select: none; 
-  pointer-events: auto; 
+  padding: 5px 8px;         
+  font-size: 12px;          
+  width: 150px;             
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  pointer-events: auto;
+  user-select: none;
   transition: opacity 0.3s ease;
 }
+
+#google_translate_element .goog-te-gadget-simple {
+  font-size: 12px !important;
+  padding: 2px !important;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+#google_translate_element .goog-te-gadget-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
 
 @media (max-width: 1285px) {
   html {
